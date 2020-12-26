@@ -7,6 +7,8 @@
 -A INPUT -p tcp -m tcp --dport 80 -j ACCEPT
 -A INPUT -p tcp -m tcp --dport 443 -j ACCEPT
 -A INPUT -p tcp -s 201:1daa:e2d8:7eb4:ff9f:b399:8cce:b8a5 --dport 1883 -j ACCEPT
+-A INPUT -p tcp -m tcp --dport 4001 -j ACCEPT
+-A INPUT -p udp -m udp --dport 4001 -j ACCEPT
 -A INPUT -p tcp -m tcp --dport 5201 -j ACCEPT
 -A INPUT -p udp -m udp --dport 5201 -j ACCEPT
 -A INPUT -p udp -m udp --dport 30664 -j ACCEPT
